@@ -1,5 +1,10 @@
 /* Estilos general del nav */
 nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
   background-color: #4e342e; /* color chocolate oscuro */
   padding: 1em;
   font-family: Arial, sans-serif;
@@ -10,6 +15,11 @@ nav h2 {
   color: #fff;
   margin: 0;
   margin-bottom: 0.5em;
+}
+
+/* Separación del contenido para dejar espacio al nav fijo */
+body {
+  margin-top: 110px;
 }
 
 /* Lista sin estilos por defecto */
@@ -43,7 +53,63 @@ nav a:hover {
   background-color: #a1887f; /* marrón más claro al pasar el mouse */
 }
 
-/*Estilos generales de los carruseles*/
+/* Estilo botón hamburguesa */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  z-index: 2001; /* por encima del nav */
+}
+
+/* Contenedor flexible para el encabezado */
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1500;
+}
+
+/* ---------- MEDIA QUERY para móviles ---------- */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: column;
+    display: none;
+    position: fixed;
+    top: 70px; /* debajo del nav fijo */
+    left: 0;
+    width: 100%;
+    background-color: rgba(78, 52, 46, 0.97);
+    z-index: 1000;
+    border-top: 1px solid #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    gap: 0;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  nav li {
+    width: 100%;
+    text-align: center;
+  }
+
+  nav a {
+    display: block;
+    padding: 1em;
+    border-bottom: 1px solid #6d4c41;
+  }
+}
+
+/* ----------- CARRUSEL Y DEMÁS ELEMENTOS ------------ */
 .carrusel-contenedor {
   position: relative;
   overflow: hidden;
@@ -122,24 +188,8 @@ nav a:hover {
   right: 0;
 }
 
-/* ------- MEDIA QUERIES PARA RESPONSIVE DESIGN ------- */
-
-/* Dispositivos medianos (tablets) */
+/* Ajustes carrusel en tablets */
 @media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    gap: 0.3em;
-  }
-
-  nav li {
-    display: block;
-    text-align: center;
-  }
-
-  nav a {
-    width: 100%;
-  }
-
   .carrusel-contenedor h3 {
     font-size: 20px;
     text-align: center;
@@ -156,22 +206,8 @@ nav a:hover {
   }
 }
 
-/* Dispositivos pequeños (móviles) */
+/* Carrusel en móviles */
 @media (max-width: 480px) {
-  nav {
-    padding: 0.5em;
-  }
-
-  nav h2 {
-    font-size: 20px;
-    text-align: center;
-  }
-
-  nav a {
-    font-size: 14px;
-    padding: 0.5em;
-  }
-
   .carrusel-contenedor {
     padding: 10px 0;
   }
@@ -196,68 +232,5 @@ nav a:hover {
   .boton-carrusel {
     font-size: 18px;
     padding: 3px 8px;
-  }
-}
-
-/* Estilo botón hamburguesa */
-.menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 28px;
-  color: white;
-  cursor: pointer;
-  z-index: 2000;
-}
-
-/* Contenedor flexible para el encabezado */
-.nav-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  z-index: 1500;
-}
-
-/* Responsive para móviles */
-@media (max-width: 768px) {
-  nav {
-    position: relative;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-
-  nav ul {
-    flex-direction: column;
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: rgba(
-      78,
-      52,
-      46,
-      0.97
-    ); /* chocolate oscuro con transparencia */
-    z-index: 1000;
-    border-top: 1px solid #fff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-  }
-
-  nav ul.active {
-    display: flex;
-  }
-
-  nav li {
-    text-align: center;
-    width: 100%;
-  }
-
-  nav a {
-    display: block;
-    padding: 1em;
   }
 }

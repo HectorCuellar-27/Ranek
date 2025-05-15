@@ -174,7 +174,8 @@ textarea {
  */
 
 button,
-input { /* 1 */
+input {
+  /* 1 */
   overflow: visible;
 }
 
@@ -184,7 +185,8 @@ input { /* 1 */
  */
 
 button,
-select { /* 1 */
+select {
+  /* 1 */
   text-transform: none;
 }
 
@@ -346,4 +348,76 @@ template {
 
 [hidden] {
   display: none;
+}
+
+/* --------- FORMULARIO DE REGISTRO --------- */
+form {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fbe9e7; /* tono beige claro, suave */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  font-family: Arial, sans-serif;
+}
+
+form label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: #4e342e; /* chocolate oscuro */
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d7ccc8; /* marrón muy claro */
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="password"]:focus {
+  border-color: #8d6e63; /* marrón claro */
+  outline: none;
+}
+
+.checkbox-group {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.checkbox-group label {
+  margin: 0;
+  color: #5d4037;
+  font-weight: normal;
+}
+
+.button-group {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-group button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #8d6e63; /* marrón claro */
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.button-group button:hover {
+  background-color: #a1887f; /* marrón más claro */
 }
