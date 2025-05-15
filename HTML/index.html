@@ -1,64 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="../CSS/normalize.css">
-    <link rel="stylesheet" href="../CSS/styles.css">
-    <title>Choclateria Ranek</title>
-</head>
-<body>
-  <nav>
-    <h2>Choclateria Ranek</h2>
-    <ul>
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="productos.html">Productos</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="nosotros.html">Sobre Nosotros</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
-      <li><a href="lista_de_deseos.html">Deseados</a></li>
-      <li><a href="carrito.html">Carrito</a></li>
-    </ul>
-  </nav>
-  <h2>Descubre el placer del chocolate artesanal</h2>
-  <p>Bienvenidos a nuestra chocolatería, donde la tradición y la calidad se unen para ofrecerte los mejores productos de cacao. Disfruta de una experiencia única con cada bocado</p>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Choclatería Ranek</title>
+    <link rel="stylesheet" href="../CSS/normalize.css" />
+    <link rel="stylesheet" href="../CSS/styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-header">
+        <h2>Choclatería Ranek</h2>
+        <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+      </div>
+      <ul class="nav-list" id="nav-list">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="nosotros.html">Sobre Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="lista_de_deseos.html">Deseados</a></li>
+        <li><a href="carrito.html">Carrito</a></li>
+      </ul>
+    </nav>
 
-  <img src="../imagenes/Semillas_Cacao.jpeg" alt="Semillas de Cacao">
-  
-  <h1>Pasion Por el Cacao</h1>
-  <p>En nuestra chocolatería, nos dedicamos a crear experiencias únicas a través del chocolate artesanal. Nuestra misión es ofrecer productos de alta calidad que resalten la riqueza del cacao mexicano, mientras promovemos prácticas sostenibles y el comercio justo.</p>
-  
-  <h2>Descubre nuestros productos 100% artesanaleS</h2>
-  <p>En nuestra chocolatería, cada bocado cuenta una historia. Disfruta de la riqueza del cacao en cada uno de nuestros productos.</p>
+    <h2>Descubre el placer del chocolate artesanal</h2>
+    <p>Bienvenidos a nuestra chocolatería...</p>
 
-<div class="carrusel">
-  <div class="carrusel-contenedor">
-    
-    <div class="tarjeta">
-      <img src="imagen1.jpg" alt="Imagen 1">
-      <h3>Título 1</h3>
-      <p>Descripción breve de la tarjeta 1.</p>
-      <p class="precio">$199.99</p>
+    <img src="../imagenes/Semillas_Cacao.jpeg" alt="Semillas de Cacao" />
+    <h1>Pasion Por el Cacao</h1>
+    <p>
+      En nuestra chocolatería, nos dedicamos a crear experiencias únicas a
+      través del chocolate artesanal. Nuestra misión es ofrecer productos de
+      alta calidad que resalten la riqueza del cacao mexicano, mientras
+      promovemos prácticas sostenibles y el comercio justo.
+    </p>
+
+    <h2>Descubre nuestros productos 100% artesanales</h2>
+    <p>
+      En nuestra chocolatería, cada bocado cuenta una historia. Disfruta de la
+      riqueza del cacao en cada uno de nuestros productos.
+    </p>
+
+    <div class="carrusel">
+      <div class="carrusel-contenedor">
+        <!-- De Cacao -->
+        <div class="tarjeta">
+          <img src="imagen_tablilla_cacao.jpg" alt="Tablilla 100% Cacao" />
+          <h3>Tablilla 100% Cacao</h3>
+          <p>Chocolate artesanal sin azúcar, ideal para bebidas.</p>
+          <p class="precio">$90.00 / 70g</p>
+        </div>
+        <div class="tarjeta">
+          <img src="imagen_nibs.jpg" alt="Cacao Tostado en Nibs" />
+          <h3>Cacao Tostado en Nibs</h3>
+          <p>Fragmentos crujientes de cacao puro.</p>
+          <p class="precio">$100.00 / 100g</p>
+        </div>
+
+        <!-- Chocolate de Mesa -->
+        <div class="tarjeta">
+          <img
+            src="imagen_granulado_cardamomo.jpg"
+            alt="Chocolate con Cardamomo"
+          />
+          <h3>Chocolate Granulado con Cardamomo</h3>
+          <p>Mezcla aromática 60% cacao con especias.</p>
+          <p class="precio">$170.00 / 250g</p>
+        </div>
+        <div class="tarjeta">
+          <img src="imagen_choco90.jpg" alt="Chocolate 90%" />
+          <h3>Chocolate en Tablilla 90%</h3>
+          <p>Intenso sabor de cacao para mesa o bebida.</p>
+          <p class="precio">$85.00 / 70g</p>
+        </div>
+
+        <!-- Chocolate en Barra -->
+        <div class="tarjeta">
+          <img src="barra_90.jpg" alt="Barra 90%" />
+          <h3>Barra de Chocolate 90%</h3>
+          <p>Alto contenido de cacao para paladares exigentes.</p>
+          <p class="precio">$110.00 / 80g</p>
+        </div>
+        <div class="tarjeta">
+          <img src="barra_70.jpg" alt="Barra 70%" />
+          <h3>Barra de Chocolate 70%</h3>
+          <p>Sabor balanceado para disfrutar solo o acompañado.</p>
+          <p class="precio">$90.00 / 80g</p>
+        </div>
+
+        <!-- Polvo para Bebidas -->
+        <div class="tarjeta">
+          <img src="atole.jpg" alt="Atole Champurrado" />
+          <h3>Polvo para Atole Tradicional</h3>
+          <p>Champurrado, negro o tanchucuá con sabor auténtico.</p>
+          <p class="precio">$80.00 / 250g</p>
+        </div>
+        <div class="tarjeta">
+          <img src="pozol.jpg" alt="Pozol y Chilate" />
+          <h3>Polvo para Pozol y Chilate</h3>
+          <p>Bebidas ancestrales elaboradas con cacao y cereales.</p>
+          <p class="precio">$80.00 / 250g</p>
+        </div>
+
+        <!-- Condimentos -->
+        <div class="tarjeta">
+          <img src="sal_colores.jpg" alt="Sal de Colores" />
+          <h3>Condimento con Sal de Mar</h3>
+          <p>Sal gourmet con especias, en distintas etiquetas.</p>
+          <p class="precio">$70.00 / 200g</p>
+        </div>
+
+        <!-- Tisanas -->
+        <div class="tarjeta">
+          <img src="tisana.jpg" alt="Tisana de Hierbas" />
+          <h3>Mezcla de Tisana</h3>
+          <p>Hierbas y especias aromáticas para infusiones.</p>
+          <p class="precio">$60.00 / 40g</p>
+        </div>
+
+        <!-- Dulces y Más -->
+        <div class="tarjeta">
+          <img src="mazapan.jpg" alt="Mazapán con Cacao" />
+          <h3>Mazapán con Cacao</h3>
+          <p>Delicioso dulce artesanal de cacahuate y cacao.</p>
+          <p class="precio">$20.00 / pieza</p>
+        </div>
+        <div class="tarjeta">
+          <img src="untable_cacahuate.jpg" alt="Untable de Cacahuate" />
+          <h3>Untable de Cacahuate</h3>
+          <p>Textura cremosa para acompañar desayunos o snacks.</p>
+          <p class="precio">$130.00 / 250g</p>
+        </div>
+      </div>
     </div>
 
-    <div class="tarjeta">
-      <img src="imagen2.jpg" alt="Imagen 2">
-      <h3>Título 2</h3>
-      <p>Descripción breve de la tarjeta 2.</p>
-      <p class="precio">$249.99</p>
-    </div>
+    <h2>Unete Nuestra comunidad</h2>
+    <h2>Preguntas Frecuentes</h2>
 
-    <div class="tarjeta">
-      <img src="imagen3.jpg" alt="Imagen 3">
-      <h3>Título 3</h3>
-      <p>Descripción breve de la tarjeta 3.</p>
-      <p class="precio">$179.99</p>
-    </div>
-  </div>
-</div>
-
-<footer>
-  Ranek All rights Reserved.
-</footer>
-
-</body>
+    <footer>Ranek All rights Reserved.</footer>
+  </body>
+  <script src="../JavaScript/scripts.js"></script>
 </html>

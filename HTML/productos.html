@@ -1,213 +1,397 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="../CSS/normalize.css">
-    <link rel="stylesheet" href="../CSS/styles.css">
-    <title>Choclateria Ranek</title>
-</head>
-<body>
-  <nav>
-    <h2>Choclateria Ranek</h2>
-    <ul>
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="productos.html">Productos</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="nosotros.html">Sobre Nosotros</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
-      <li><a href="lista_de_deseos.html">Deseados</a></li>
-      <li><a href="carrito.html">Carrito</a></li>
-    </ul>
-  </nav>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Choclatería Ranek</title>
+    <link rel="stylesheet" href="../CSS/normalize.css" />
+    <link rel="stylesheet" href="../CSS/styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-header">
+        <h2>Choclatería Ranek</h2>
+        <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+      </div>
+      <ul class="nav-list" id="nav-list">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="nosotros.html">Sobre Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="lista_de_deseos.html">Deseados</a></li>
+        <li><a href="carrito.html">Carrito</a></li>
+      </ul>
+    </nav>
 
-  <h2>Delicias de Cacao</h2>
-  <p>Descubre nuestra rica variedad de porductos</p>
+    <h2>Delicias de Cacao</h2>
+    <p>Descubre nuestra rica variedad de porductos</p>
 
-<div class="carrusel_cacao">
-  <div class="carrusel-contenedor">
-    <h3>Cacao</h3>
-    <div class="tarjeta">
-      <img src="imagen1.jpg" alt="Imagen 1">
-      <h3>Título 1</h3>
-      <p>Descripción breve de la tarjeta 1.</p>
-      <p class="precio">$199.99</p>
+    <!-- Carrusel Cacao -->
+    <div class="carrusel_cacao">
+      <div class="carrusel-contenedor">
+        <h3>Cacao</h3>
+        <div class="tarjeta">
+          <img src="imagen_pasta_cacao.jpg" alt="Pasta 100% Cacao" />
+          <h3>Pasta 100% Cacao Granulada</h3>
+          <p>Intensa pasta granulada de cacao puro.</p>
+          <p class="precio">$250.00 / 250g</p>
+        </div>
+        <div class="tarjeta">
+          <img src="imagen_tablilla_cacao.jpg" alt="Tablilla 100% Cacao" />
+          <h3>Tablilla 100% Cacao</h3>
+          <p>Chocolate artesanal sin azúcar, ideal para bebidas.</p>
+          <p class="precio">$90.00 / 70g</p>
+        </div>
+        <div class="tarjeta">
+          <img src="imagen_nibs.jpg" alt="Cacao Tostado en Nibs" />
+          <h3>Cacao Tostado en Nibs</h3>
+          <p>Fragmentos crujientes de cacao puro.</p>
+          <p class="precio">$100.00 / 100g</p>
+        </div>
+        <div class="tarjeta">
+          <img src="cacao_premium.jpg" alt="Cacao Premium" />
+          <h3>Cacao Premium de Origen</h3>
+          <p>Seleccionado a mano para máxima calidad y sabor.</p>
+          <p class="precio">$290.00 / 250g</p>
+        </div>
+        <div class="tarjeta">
+          <img src="nibs_caramelizados.jpg" alt="Nibs Caramelizados" />
+          <h3>Nibs de Cacao Caramelizados</h3>
+          <p>Fragmentos dulces con textura crujiente.</p>
+          <p class="precio">$120.00 / 100g</p>
+        </div>
+        <div class="tarjeta">
+          <img src="pasta_artesanal.jpg" alt="Pasta Artesanal de Cacao" />
+          <h3>Pasta Artesanal de Cacao</h3>
+          <p>Molido en piedra, sabor tradicional.</p>
+          <p class="precio">$260.00 / 250g</p>
+        </div>
+        <div class="tarjeta">
+          <img src="pasta_achiote.jpg" alt="Cacao con Achiote" />
+          <h3>Cacao con Achiote</h3>
+          <p>Mezcla prehispánica para bebidas rituales.</p>
+          <p class="precio">$270.00 / 250g</p>
+        </div>
+        <div class="tarjeta">
+          <img src="cacao_orgánico.jpg" alt="Cacao Orgánico" />
+          <h3>Cacao Orgánico en Pasta</h3>
+          <p>Libre de agroquímicos, aroma y sabor auténtico.</p>
+          <p class="precio">$280.00 / 250g</p>
+        </div>
+      </div>
     </div>
 
-    <div class="tarjeta">
-      <img src="imagen2.jpg" alt="Imagen 2">
-      <h3>Título 2</h3>
-      <p>Descripción breve de la tarjeta 2.</p>
-      <p class="precio">$249.99</p>
+    <!-- Carrusel Chocolate de Mesa -->
+    <div class="carrusel_Chocolate_de_mesa">
+      <div class="carrusel-contenedor">
+        <h3>Chocolate de Mesa</h3>
+        <div class="tarjeta">
+          <img src="imagen_choco90.jpg" alt="Chocolate 90%" />
+          <h3>Chocolate en Tablilla 90%</h3>
+          <p>Intenso sabor de cacao para mesa o bebida.</p>
+          <p class="precio">$85.00 / 70g</p>
+        </div>
+        <div class="tarjeta">
+          <img src="imagen_moliendas.jpg" alt="Moliendas" />
+          <h3>Moliendas Tradicionales</h3>
+          <p>Chocolate molido de Oaxaca, Tabasco, Veracruz o Chiapas.</p>
+          <p class="precio">$170.00 / 250g</p>
+        </div>
+        <div class="tarjeta">
+          <img
+            src="imagen_granulado_cardamomo.jpg"
+            alt="Chocolate con Cardamomo"
+          />
+          <h3>Chocolate Granulado con Cardamomo</h3>
+          <p>Mezcla aromática 60% cacao con especias.</p>
+          <p class="precio">$170.00 / 250g</p>
+        </div>
+        <div class="tarjeta">
+          <img src="choco_canela.jpg" alt="Chocolate con Canela" />
+          <h3>Chocolate con Canela</h3>
+          <p>Fusión de cacao con especias cálidas.</p>
+          <p class="precio">$165.00 / 250g</p>
+        </div>
+        <div class="tarjeta">
+          <img src="choco_azucar_mascabado.jpg" alt="Chocolate con Mascabado" />
+          <h3>Chocolate con Azúcar Mascabado</h3>
+          <p>Sabor dulce intenso y natural.</p>
+          <p class="precio">$175.00 / 250g</p>
+        </div>
+        <div class="tarjeta">
+          <img src="choco_mandarina.jpg" alt="Chocolate con Mandarina" />
+          <h3>Chocolate con Ralladura de Mandarina</h3>
+          <p>Notas cítricas frescas para bebida cálida.</p>
+          <p class="precio">$180.00 / 250g</p>
+        </div>
+        <div class="tarjeta">
+          <img src="choco_avena.jpg" alt="Chocolate con Avena" />
+          <h3>Chocolate con Avena Tostada</h3>
+          <p>Suavidad y textura para bebida espesa.</p>
+          <p class="precio">$160.00 / 250g</p>
+        </div>
+        <div class="tarjeta">
+          <img src="choco_mexicano.jpg" alt="Chocolate Mexicano" />
+          <h3>Chocolate de Mesa Mexicano 85%</h3>
+          <p>Fuerte, rústico y con sabor de tradición.</p>
+          <p class="precio">$150.00 / 250g</p>
+        </div>
+      </div>
     </div>
 
-    <div class="tarjeta">
-      <img src="imagen3.jpg" alt="Imagen 3">
-      <h3>Título 3</h3>
-      <p>Descripción breve de la tarjeta 3.</p>
-      <p class="precio">$179.99</p>
-    </div>
-  </div>
-</div>
-
-<div class="carrusel_Chocolate_de_mesa">
-  <div class="carrusel-contenedor">
-    <h3>Chocolate de Mesa</h3>
-    <div class="tarjeta">
-      <img src="imagen1.jpg" alt="Imagen 1">
-      <h3>Título 1</h3>
-      <p>Descripción breve de la tarjeta 1.</p>
-      <p class="precio">$199.99</p>
-    </div>
-
-    <div class="tarjeta">
-      <img src="imagen2.jpg" alt="Imagen 2">
-      <h3>Título 2</h3>
-      <p>Descripción breve de la tarjeta 2.</p>
-      <p class="precio">$249.99</p>
-    </div>
-
-    <div class="tarjeta">
-      <img src="imagen3.jpg" alt="Imagen 3">
-      <h3>Título 3</h3>
-      <p>Descripción breve de la tarjeta 3.</p>
-      <p class="precio">$179.99</p>
-    </div>
-  </div>
-</div>
-
-<div class="carrusel_chocolate_en_barra">
-  <div class="carrusel-contenedor">
-    <h3>Chocolate en Barra</h3>
-    <div class="tarjeta">
-      <img src="imagen1.jpg" alt="Imagen 1">
-      <h3>Título 1</h3>
-      <p>Descripción breve de la tarjeta 1.</p>
-      <p class="precio">$199.99</p>
-    </div>
-
-    <div class="tarjeta">
-      <img src="imagen2.jpg" alt="Imagen 2">
-      <h3>Título 2</h3>
-      <p>Descripción breve de la tarjeta 2.</p>
-      <p class="precio">$249.99</p>
-    </div>
-
-    <div class="tarjeta">
-      <img src="imagen3.jpg" alt="Imagen 3">
-      <h3>Título 3</h3>
-      <p>Descripción breve de la tarjeta 3.</p>
-      <p class="precio">$179.99</p>
-    </div>
-  </div>
-</div>
-
-<div class="carrusel_polvo_para_preparar_bebidas">
-  <div class="carrusel-contenedor">
-    <h3>Polvos para preparar Bebidas Artesanales</h3>
-    <div class="tarjeta">
-      <img src="imagen1.jpg" alt="Imagen 1">
-      <h3>Título 1</h3>
-      <p>Descripción breve de la tarjeta 1.</p>
-      <p class="precio">$199.99</p>
+    <!-- Carrusel Chocolate en Barra -->
+    <div class="carrusel_chocolate_en_barra">
+      <div class="carrusel-contenedor">
+        <h3>Chocolate en Barra</h3>
+        <div class="tarjeta">
+          <img src="barra_pasta.jpg" alt="Barra de Pasta Cacao" />
+          <h3>Barra de Pasta 100% Cacao</h3>
+          <p>Barra compacta de cacao puro para bebidas o repostería.</p>
+          <p class="precio">$120.00 / 80g</p>
+        </div>
+        <div class="tarjeta">
+          <img src="barra_90.jpg" alt="Barra 90%" />
+          <h3>Barra de Chocolate 90%</h3>
+          <p>Alto contenido de cacao para paladares exigentes.</p>
+          <p class="precio">$110.00 / 80g</p>
+        </div>
+        <div class="tarjeta">
+          <img src="barra_70.jpg" alt="Barra 70%" />
+          <h3>Barra de Chocolate 70%</h3>
+          <p>Sabor balanceado para disfrutar solo o acompañado.</p>
+          <p class="precio">$90.00 / 80g</p>
+        </div>
+        <div class="tarjeta">
+          <img src="barra_naranja.jpg" alt="Barra con Naranja" />
+          <h3>Barra con Esencia de Naranja</h3>
+          <p>Toques cítricos en chocolate oscuro.</p>
+          <p class="precio">$95.00 / 80g</p>
+        </div>
+        <div class="tarjeta">
+          <img src="barra_cafe.jpg" alt="Barra con Café" />
+          <h3>Barra con Café de Altura</h3>
+          <p>Mezcla intensa de cacao y café orgánico.</p>
+          <p class="precio">$115.00 / 80g</p>
+        </div>
+        <div class="tarjeta">
+          <img src="barra_especias.jpg" alt="Barra con Especias" />
+          <h3>Barra con Canela y Clavo</h3>
+          <p>Chocolate especiado de sabor envolvente.</p>
+          <p class="precio">$100.00 / 80g</p>
+        </div>
+        <div class="tarjeta">
+          <img src="barra_menta.jpg" alt="Barra con Menta" />
+          <h3>Barra con Menta Natural</h3>
+          <p>Frescura equilibrada en chocolate 70%.</p>
+          <p class="precio">$95.00 / 80g</p>
+        </div>
+        <div class="tarjeta">
+          <img src="barra_jamaica.jpg" alt="Barra con Jamaica" />
+          <h3>Barra con Flor de Jamaica</h3>
+          <p>Notas ácidas y frutales con cacao oscuro.</p>
+          <p class="precio">$105.00 / 80g</p>
+        </div>
+      </div>
     </div>
 
-    <div class="tarjeta">
-      <img src="imagen2.jpg" alt="Imagen 2">
-      <h3>Título 2</h3>
-      <p>Descripción breve de la tarjeta 2.</p>
-      <p class="precio">$249.99</p>
+    <!-- Carrusel Polvo para Bebidas -->
+    <div class="carrusel_polvo_para_preparar_bebidas">
+      <div class="carrusel-contenedor">
+        <h3>Polvos para preparar Bebidas Artesanales</h3>
+        <div class="tarjeta">
+          <img src="pozol.jpg" alt="Pozol y Chilate" />
+          <h3>Polvo para Pozol y Chilate</h3>
+          <p>Bebidas ancestrales elaboradas con cacao y cereales.</p>
+          <p class="precio">$80.00 / 250g</p>
+        </div>
+        <div class="tarjeta">
+          <img src="atole.jpg" alt="Atole Champurrado" />
+          <h3>Polvo para Atole Tradicional</h3>
+          <p>Champurrado, negro o tanchucuá con sabor auténtico.</p>
+          <p class="precio">$80.00 / 250g</p>
+        </div>
+        <div class="tarjeta">
+          <img src="pinole.jpg" alt="Pinole Tradicional" />
+          <h3>Pinole Tradicional</h3>
+          <p>Maíz tostado molido con canela y azúcar morena.</p>
+          <p class="precio">$75.00 / 200g</p>
+        </div>
+        <div class="tarjeta">
+          <img src="tejate.jpg" alt="Polvo para Tejate" />
+          <h3>Mezcla para Tejate</h3>
+          <p>Bebida ancestral oaxaqueña a base de maíz y cacao.</p>
+          <p class="precio">$90.00 / 250g</p>
+        </div>
+        <div class="tarjeta">
+          <img src="pozol_especial.jpg" alt="Pozol Especial" />
+          <h3>Pozol con Cacao y Vainilla</h3>
+          <p>Refrescante bebida tradicional chiapaneca.</p>
+          <p class="precio">$85.00 / 250g</p>
+        </div>
+        <div class="tarjeta">
+          <img src="champurrado_nuez.jpg" alt="Champurrado con Nuez" />
+          <h3>Champurrado con Nuez</h3>
+          <p>Polvo dulce, aromático y espeso para invierno.</p>
+          <p class="precio">$95.00 / 250g</p>
+        </div>
+        <div class="tarjeta">
+          <img src="tanchucua.jpg" alt="Tanchucuá Tabasqueño" />
+          <h3>Tanchucuá Tabasqueño</h3>
+          <p>Bebida prehispánica energética de cacao y maíz.</p>
+          <p class="precio">$100.00 / 250g</p>
+        </div>
+      </div>
     </div>
 
-    <div class="tarjeta">
-      <img src="imagen3.jpg" alt="Imagen 3">
-      <h3>Título 3</h3>
-      <p>Descripción breve de la tarjeta 3.</p>
-      <p class="precio">$179.99</p>
-    </div>
-  </div>
-</div>
-
-<div class="carrusel_condimentos">
-  <div class="carrusel-contenedor">
-    <h3>Condientos</h3>
-    <div class="tarjeta">
-      <img src="imagen1.jpg" alt="Imagen 1">
-      <h3>Título 1</h3>
-      <p>Descripción breve de la tarjeta 1.</p>
-      <p class="precio">$199.99</p>
-    </div>
-
-    <div class="tarjeta">
-      <img src="imagen2.jpg" alt="Imagen 2">
-      <h3>Título 2</h3>
-      <p>Descripción breve de la tarjeta 2.</p>
-      <p class="precio">$249.99</p>
-    </div>
-
-    <div class="tarjeta">
-      <img src="imagen3.jpg" alt="Imagen 3">
-      <h3>Título 3</h3>
-      <p>Descripción breve de la tarjeta 3.</p>
-      <p class="precio">$179.99</p>
-    </div>
-  </div>
-</div>
-
-<div class="carrusel_tisanas">
-  <div class="carrusel-contenedor">
-    <h3>Tisanas</h3>
-    <div class="tarjeta">
-      <img src="imagen1.jpg" alt="Imagen 1">
-      <h3>Título 1</h3>
-      <p>Descripción breve de la tarjeta 1.</p>
-      <p class="precio">$199.99</p>
+    <!-- Carrusel Condimentos -->
+    <div class="carrusel_condimentos">
+      <div class="carrusel-contenedor">
+        <h3>Condimentos</h3>
+        <div class="tarjeta">
+          <img src="sal_colores.jpg" alt="Sal de Colores" />
+          <h3>Condimento con Sal de Mar</h3>
+          <p>Sal gourmet con especias, en distintas etiquetas.</p>
+          <p class="precio">$70.00 / 200g</p>
+        </div>
+        <div class="tarjeta">
+          <img src="sal_chile.jpg" alt="Sal con Chile y Limón" />
+          <h3>Sal con Chile y Limón</h3>
+          <p>Perfecta para frutas o botanas.</p>
+          <p class="precio">$60.00 / 150g</p>
+        </div>
+        <div class="tarjeta">
+          <img src="condimento_chocolate.jpg" alt="Condimento para Chocolate" />
+          <h3>Mezcla de Especias para Chocolate</h3>
+          <p>Clavo, canela y nuez moscada para preparar bebida espesa.</p>
+          <p class="precio">$70.00 / 100g</p>
+        </div>
+        <div class="tarjeta">
+          <img src="sal_cacao.jpg" alt="Sal de Cacao" />
+          <h3>Sal de Mar con Cacao</h3>
+          <p>Para carnes, salsas o postres gourmet.</p>
+          <p class="precio">$75.00 / 150g</p>
+        </div>
+        <div class="tarjeta">
+          <img src="sal_ajo.jpg" alt="Sal con Ajo" />
+          <h3>Sal con Ajo Tostado</h3>
+          <p>Toque umami para cocinar o espolvorear.</p>
+          <p class="precio">$65.00 / 150g</p>
+        </div>
+        <div class="tarjeta">
+          <img src="mix_especias.jpg" alt="Mix de Especias" />
+          <h3>Mix de Especias Mexicanas</h3>
+          <p>Perfecto para adobos y moles tradicionales.</p>
+          <p class="precio">$80.00 / 100g</p>
+        </div>
+      </div>
     </div>
 
-    <div class="tarjeta">
-      <img src="imagen2.jpg" alt="Imagen 2">
-      <h3>Título 2</h3>
-      <p>Descripción breve de la tarjeta 2.</p>
-      <p class="precio">$249.99</p>
+    <!-- Carrusel Tisanas -->
+    <div class="carrusel_tisanas">
+      <div class="carrusel-contenedor">
+        <h3>Tisanas</h3>
+        <div class="tarjeta">
+          <img src="tisana.jpg" alt="Tisana de Hierbas" />
+          <h3>Mezcla de Tisana</h3>
+          <p>Hierbas y especias aromáticas para infusiones.</p>
+          <p class="precio">$60.00 / 40g</p>
+        </div>
+        <div class="tarjeta">
+          <img src="tisana_floral.jpg" alt="Tisana Floral" />
+          <h3>Tisana Floral Calmante</h3>
+          <p>Mezcla de rosa, manzanilla y lavanda.</p>
+          <p class="precio">$65.00 / 40g</p>
+        </div>
+        <div class="tarjeta">
+          <img src="tisana_frutas.jpg" alt="Tisana Frutal" />
+          <h3>Tisana Frutas del Bosque</h3>
+          <p>Arándano, zarzamora y jamaica deshidratadas.</p>
+          <p class="precio">$70.00 / 40g</p>
+        </div>
+        <div class="tarjeta">
+          <img src="tisana_menta.jpg" alt="Tisana Menta Limón" />
+          <h3>Tisana Menta y Limón</h3>
+          <p>Refrescante infusión digestiva.</p>
+          <p class="precio">$60.00 / 40g</p>
+        </div>
+        <div class="tarjeta">
+          <img src="tisana_dulce.jpg" alt="Tisana Dulce Noche" />
+          <h3>Tisana Dulce Noche</h3>
+          <p>Ideal para relajarse con vainilla y canela.</p>
+          <p class="precio">$65.00 / 40g</p>
+        </div>
+        <div class="tarjeta">
+          <img src="tisana_picosa.jpg" alt="Tisana Picante" />
+          <h3>Tisana de Jengibre y Chile</h3>
+          <p>Infusión revitalizante con un toque picante.</p>
+          <p class="precio">$70.00 / 40g</p>
+        </div>
+      </div>
     </div>
 
-    <div class="tarjeta">
-      <img src="imagen3.jpg" alt="Imagen 3">
-      <h3>Título 3</h3>
-      <p>Descripción breve de la tarjeta 3.</p>
-      <p class="precio">$179.99</p>
+    <!-- Carrusel Dulces y Más -->
+    <div class="carrusel_dulces_botanas_untables_etc">
+      <div class="carrusel-contenedor">
+        <h3>Botanas, Untables y Más</h3>
+        <div class="tarjeta">
+          <img src="garapiñado.jpg" alt="Cacao Garapiñado" />
+          <h3>Cacao Garapiñado</h3>
+          <p>Semilla de cacao tostada cubierta de dulce crocante.</p>
+          <p class="precio">$80.00 / 100g</p>
+        </div>
+        <div class="tarjeta">
+          <img src="mazapan.jpg" alt="Mazapán con Cacao" />
+          <h3>Mazapán con Cacao</h3>
+          <p>Delicioso dulce artesanal de cacahuate y cacao.</p>
+          <p class="precio">$20.00 / pieza</p>
+        </div>
+        <div class="tarjeta">
+          <img src="untable_cacahuate.jpg" alt="Untable de Cacahuate" />
+          <h3>Untable de Cacahuate</h3>
+          <p>Textura cremosa para acompañar desayunos o snacks.</p>
+          <p class="precio">$130.00 / 250g</p>
+        </div>
+        <div class="tarjeta">
+          <img src="cacao_crujiente.jpg" alt="Cacao Crujiente con Miel" />
+          <h3>Cacao Crujiente con Miel</h3>
+          <p>Endulzado naturalmente y muy crocante.</p>
+          <p class="precio">$85.00 / 100g</p>
+        </div>
+        <div class="tarjeta">
+          <img src="mazapan_nuez.jpg" alt="Mazapán con Nuez y Cacao" />
+          <h3>Mazapán con Nuez y Cacao</h3>
+          <p>Versión gourmet con textura suave.</p>
+          <p class="precio">$25.00 / pieza</p>
+        </div>
+        <div class="tarjeta">
+          <img src="untable_avellana.jpg" alt="Untable de Avellana y Cacao" />
+          <h3>Untable de Avellana y Cacao</h3>
+          <p>Cremoso y natural, sin conservadores.</p>
+          <p class="precio">$140.00 / 250g</p>
+        </div>
+        <div class="tarjeta">
+          <img src="crocante.jpg" alt="Trozos Crocantes con Cacao" />
+          <h3>Trozos Crocantes con Cacao</h3>
+          <p>Botana artesanal con cacahuate tostado.</p>
+          <p class="precio">$75.00 / 100g</p>
+        </div>
+        <div class="tarjeta">
+          <img src="trufas_cacao.jpg" alt="Trufas de Cacao" />
+          <h3>Trufas de Cacao Artesanales</h3>
+          <p>Dulces suaves cubiertos de cacao amargo.</p>
+          <p class="precio">$110.00 / 6 piezas</p>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
-<div class="carrusel_dulces_botanas_untables_etc">
-  <div class="carrusel-contenedor">
-    <h3>Botanas Untables Dulces ETC</h3>
-    <div class="tarjeta">
-      <img src="imagen1.jpg" alt="Imagen 1">
-      <h3>Título 1</h3>
-      <p>Descripción breve de la tarjeta 1.</p>
-      <p class="precio">$199.99</p>
-    </div>
+    <h2>Unete Nuestra comunidad</h2>
 
-    <div class="tarjeta">
-      <img src="imagen2.jpg" alt="Imagen 2">
-      <h3>Título 2</h3>
-      <p>Descripción breve de la tarjeta 2.</p>
-      <p class="precio">$249.99</p>
-    </div>
+    <h2>Clientes Satisfechos</h2>
 
-    <div class="tarjeta">
-      <img src="imagen3.jpg" alt="Imagen 3">
-      <h3>Título 3</h3>
-      <p>Descripción breve de la tarjeta 3.</p>
-      <p class="precio">$179.99</p>
-    </div>
-  </div>
-</div>
+    <h2>Preguntas Frecuentes</h2>
 
-<footer>
-  Ranek All rights Reserved.
-</footer>
-
-</body>
+    <footer>Ranek All rights Reserved.</footer>
+  </body>
+  <script src="../JavaScript/scripts.js"></script>
 </html>

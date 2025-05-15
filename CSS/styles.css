@@ -1,0 +1,263 @@
+/* Estilos general del nav */
+nav {
+  background-color: #4e342e; /* color chocolate oscuro */
+  padding: 1em;
+  font-family: Arial, sans-serif;
+}
+
+/* Título del nav */
+nav h2 {
+  color: #fff;
+  margin: 0;
+  margin-bottom: 0.5em;
+}
+
+/* Lista sin estilos por defecto */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+}
+
+/* Estilo de cada ítem */
+nav li {
+  display: inline;
+}
+
+/* Estilo de los enlaces */
+nav a {
+  text-decoration: none;
+  background-color: #8d6e63; /* marrón claro */
+  color: #fff;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+/* Efecto hover */
+nav a:hover {
+  background-color: #a1887f; /* marrón más claro al pasar el mouse */
+}
+
+/*Estilos generales de los carruseles*/
+.carrusel-contenedor {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.carrusel-contenedor h3 {
+  margin-left: 10px;
+  font-size: 24px;
+  color: #333;
+}
+
+.carrusel-contenedor .tarjeta {
+  flex: 0 0 auto;
+  width: 250px;
+  margin: 0 10px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.carrusel-contenedor .tarjeta img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.carrusel-contenedor .tarjeta h3 {
+  font-size: 18px;
+  margin: 10px 0 5px;
+}
+
+.carrusel-contenedor .tarjeta p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.carrusel-contenedor .precio {
+  color: #b12704;
+  font-weight: bold;
+}
+
+.carrusel-carril {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px;
+}
+
+.boton-carrusel {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 5px 10px;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+}
+
+.boton-carrusel:hover {
+  background-color: #ddd;
+}
+
+.boton-izquierda {
+  left: 0;
+}
+
+.boton-derecha {
+  right: 0;
+}
+
+/* ------- MEDIA QUERIES PARA RESPONSIVE DESIGN ------- */
+
+/* Dispositivos medianos (tablets) */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.3em;
+  }
+
+  nav li {
+    display: block;
+    text-align: center;
+  }
+
+  nav a {
+    width: 100%;
+  }
+
+  .carrusel-contenedor h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .carrusel-contenedor .tarjeta {
+    width: 200px;
+    margin: 0 5px;
+  }
+
+  .boton-carrusel {
+    font-size: 20px;
+    padding: 5px;
+  }
+}
+
+/* Dispositivos pequeños (móviles) */
+@media (max-width: 480px) {
+  nav {
+    padding: 0.5em;
+  }
+
+  nav h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  nav a {
+    font-size: 14px;
+    padding: 0.5em;
+  }
+
+  .carrusel-contenedor {
+    padding: 10px 0;
+  }
+
+  .carrusel-contenedor h3 {
+    font-size: 18px;
+  }
+
+  .carrusel-contenedor .tarjeta {
+    width: 160px;
+    padding: 8px;
+  }
+
+  .carrusel-contenedor .tarjeta h3 {
+    font-size: 16px;
+  }
+
+  .carrusel-contenedor .tarjeta p {
+    font-size: 12px;
+  }
+
+  .boton-carrusel {
+    font-size: 18px;
+    padding: 3px 8px;
+  }
+}
+
+/* Estilo botón hamburguesa */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  z-index: 2000;
+}
+
+/* Contenedor flexible para el encabezado */
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1500;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+  nav {
+    position: relative;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(
+      78,
+      52,
+      46,
+      0.97
+    ); /* chocolate oscuro con transparencia */
+    z-index: 1000;
+    border-top: 1px solid #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  nav li {
+    text-align: center;
+    width: 100%;
+  }
+
+  nav a {
+    display: block;
+    padding: 1em;
+  }
+}
